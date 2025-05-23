@@ -1,3 +1,6 @@
+README.md
+markdown
+
 # Cloudflare Worker: ASN Prefix Sync
 
 This Cloudflare Worker synchronizes IP prefixes (IPv4/IPv6 CIDR) from a D1 database table (e.g., `AS14593`) to a Cloudflare Gateway list. It fetches prefixes associated with a specified Autonomous System Number (ASN), compares them with the current Gateway list, and updates the list using the Cloudflare API. The Worker is designed to handle large datasets (e.g., 1,400+ prefixes) efficiently with batch processing.
